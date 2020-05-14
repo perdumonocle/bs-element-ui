@@ -8,13 +8,13 @@
   &:focus {
     background: $color;
     border-color: $color;
-    color: $--color-white;
+    color: var(--color-white);
   }
 
   &:active {
     background: mix($--color-black, $color, $--button-active-shade-percent);
     border-color: mix($--color-black, $color, $--button-active-shade-percent);
-    color: $--color-white;
+    color: var(--color-white);
     outline: none;
   }
 
@@ -60,7 +60,7 @@
     &:hover,
     &:focus,
     &:active {
-      color: $--color-white;
+      color: var(--color-white);
       background-color: mix($background-color, $--color-white);
       border-color: mix($border-color, $--color-white);
     }

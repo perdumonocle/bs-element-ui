@@ -44,16 +44,16 @@
     }
 
     &:hover {
-      border-color: $--color-primary;
-      color: $--color-primary;
+      border-color: var(--color-primary);
+      color: var(--color-primary);
     }
   }
   &:focus {
-    border-color: $--color-primary;
-    color: $--color-primary;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
 
     .el-upload-dragger {
-      border-color: $--color-primary;
+      border-color: var(--color-primary);
     }
   }
 }
@@ -82,7 +82,7 @@
   }
 
   ~ .el-upload__files {
-    border-top: $--border-base;
+    border-top: var(--border-base);
     margin-top: 7px;
     padding-top: 5px;
   }
@@ -93,18 +93,18 @@
     text-align: center;
 
     em {
-      color: $--color-primary;
+      color: var(--color-primary);
       font-style: normal;
     }
   }
 
   &:hover {
-    border-color: $--color-primary;
+    border-color: var(--color-primary);
   }
 
   @include when(dragover) {
     background-color: rgba(32, 159, 255, .06);
-    border: 2px dashed $--color-primary;
+    border: 2px dashed var(--color-primary);
   }
 }
 
@@ -146,7 +146,7 @@
     }
 
     & .el-icon-upload-success {
-      color: $--color-success;
+      color: var(--color-success);
     }
 
     .el-icon-close {
@@ -172,11 +172,11 @@
       font-size: 12px;
       cursor: pointer;
       opacity: 1;
-      color: $--color-primary;
+      color: var(--color-primary);
     }
     
     &:hover {
-      background-color: $--background-color-base;
+      background-color: var(--background-color-base);
 
       .el-icon-close {
         display: inline-block;
@@ -193,7 +193,7 @@
       }
 
       .el-upload-list__item-name:hover, .el-upload-list__item-name:focus {
-        color: $--link-hover-color;
+        color: var(--link-hover-color);
         cursor: pointer;
       }
 
@@ -237,7 +237,7 @@
     [class^="el-icon"] {
       height: 100%;
       margin-right: 7px;
-      color: $--color-text-secondary;
+      color: var(--color-text-secondary);
       line-height: inherit;
     }
   }
@@ -259,7 +259,7 @@
     display: none;
 
     &:hover {
-      color: $--color-primary;
+      color: var(--color-primary);
     }
   }
 
@@ -281,7 +281,7 @@
 
       .el-icon-check,
       .el-icon-circle-check {
-        color: $--color-white;
+        color: var(--color-white);
       }
 
       .el-icon-close {
@@ -395,7 +395,7 @@
 
       .el-icon-check,
       .el-icon-circle-check {
-        color: $--color-white;
+        color: var(--color-white);
       }
 
       &:hover {
@@ -538,7 +538,7 @@
 
     .btn {
       display: inline-block;
-      color: $--color-white;
+      color: var(--color-white);
       font-size: 14px;
       cursor: pointer;
       vertical-align: middle;
@@ -567,7 +567,7 @@
       }
 
       i {
-        color: $--color-white;
+        color: var(--color-white);
         display: block;
         font-size: 24px;
         line-height: inherit;
@@ -580,7 +580,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: $--color-white;
+    background-color: var(--color-white);
     height: 36px;
     width: 100%;
     overflow: hidden;
@@ -592,7 +592,7 @@
     margin: 0;
     line-height: 36px;
     font-size: 14px;
-    color: $--color-text-primary;
+    color: var(--color-text-primary);
   }
 
   + .el-upload__inner {

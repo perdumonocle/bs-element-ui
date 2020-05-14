@@ -61,11 +61,11 @@
 
   @include when(success) {
     .el-progress-bar__inner {
-      background-color: $--color-success;
+      background-color: var(--color-success);
     }
 
     .el-progress__text {
-      color: $--color-success;
+      color: var(--color-success);
     }
   }
 
@@ -81,11 +81,11 @@
 
   @include when(exception) {
     .el-progress-bar__inner {
-      background-color: $--color-danger;
+      background-color: var(--color-danger);
     }
 
     .el-progress__text {
-      color: $--color-danger;
+      color: var(--color-danger);
     }
   }
 }
@@ -101,7 +101,7 @@
   @include e(outer) {
     height: 6px;
     border-radius: 100px;
-    background-color: $--border-color-lighter;
+    background-color: var(--border-color-lighter);
     overflow: hidden;
     position: relative;
     vertical-align: middle;
@@ -111,7 +111,7 @@
     left: 0;
     top: 0;
     height: 100%;
-    background-color: $--color-primary;
+    background-color: var(--color-primary);
     text-align: right;
     border-radius: 100px;
     line-height: 1;
@@ -124,7 +124,7 @@
   @include e(innerText) {
     display: inline-block;
     vertical-align: middle;
-    color: $--color-white;
+    color: var(--color-white);
     font-size: 12px;
     margin: 0 5px;
   }

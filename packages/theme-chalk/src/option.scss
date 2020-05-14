@@ -16,16 +16,16 @@
     cursor: pointer;
 
     @include when(disabled) {
-      color: $--select-option-disabled-color;
+      color: var(--select-option-disabled-color);
       cursor: not-allowed;
 
       &:hover {
-        background-color: $--color-white;
+        background-color: var(--color-white);
       }
     }
 
     &.hover, &:hover {
-      background-color: $--select-option-hover-background;
+      background-color: var(--select-option-hover-background);
     }
 
     &.selected {

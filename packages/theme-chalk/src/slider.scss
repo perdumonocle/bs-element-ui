@@ -12,7 +12,7 @@
     width: 100%;
     height: $--slider-height;
     margin: $--slider-margin;
-    background-color: $--slider-runway-background-color;
+    background-color: var(--slider-runway-background-color);
     border-radius: $--slider-border-radius;
     position: relative;
     cursor: pointer;
@@ -122,7 +122,7 @@
     width: $--slider-button-size;
     height: $--slider-button-size;
     border: solid 2px $--slider-main-background-color;
-    background-color: $--color-white;
+    background-color: var(--color-white);
     border-radius: 50%;
     transition: .2s;
     user-select: none;
@@ -148,7 +148,7 @@
     height: $--slider-height;
     width: $--slider-height;
     border-radius: $--border-radius-circle;
-    background-color: $--slider-stop-background-color;
+    background-color: var(--slider-stop-background-color);
     transform: translateX(-50%);
   }
 
@@ -228,14 +228,14 @@
           .el-input-number__decrease,
           .el-input-number__increase
           {
-            border-color: $--input-hover-border;
+            border-color: var(--input-hover-border);
           }
         }
         &:active {
           .el-input-number__decrease,
           .el-input-number__increase
           {
-            border-color: $--input-focus-border;
+            border-color: var(--input-focus-border);
           }
         }
       }

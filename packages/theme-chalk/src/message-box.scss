@@ -9,9 +9,9 @@
   width: $--msgbox-width;
   padding-bottom: 10px;
   vertical-align: middle;
-  background-color: $--color-white;
+  background-color: var(--color-white);
   border-radius: $--msgbox-border-radius;
-  border: 1px solid $--border-color-lighter;
+  border: 1px solid var(--border-color-lighter);
   font-size: $--messagebox-font-size;
   box-shadow: $--box-shadow-light;
   text-align: left;
@@ -66,7 +66,7 @@
 
     &:focus, &:hover {
       .el-message-box__close {
-        color: $--color-primary;
+        color: var(--color-primary);
       }
     }
 
@@ -74,7 +74,7 @@
 
   @include e(content) {
     padding: 10px $--msgbox-padding-primary;
-    color: $--messagebox-content-color;
+    color: var(--messagebox-content-color);
     font-size: $--messagebox-content-font-size;
   }
   
@@ -86,9 +86,9 @@
     padding-top: 15px;
 
     & input.invalid {
-      border-color: $--color-danger;
+      border-color: var(--color-danger);
       &:focus {
-        border-color: $--color-danger;
+        border-color: var(--color-danger);
       }
     }
   }
@@ -114,7 +114,7 @@
     }
 
     &.el-icon-info {
-      color: $--messagebox-info-color;
+      color: var(--messagebox-info-color);
     }
 
     &.el-icon-warning {
@@ -122,7 +122,7 @@
     }
 
     &.el-icon-error {
-      color: $--messagebox-danger-color;
+      color: var(--messagebox-danger-color);
     }
   }
 
@@ -136,7 +136,7 @@
   }
 
   @include e(errormsg) {
-    color: $--color-danger;
+    color: var(--color-danger);
     font-size: $--messagebox-error-font-size;
     min-height: 18px;
     margin-top: 2px;

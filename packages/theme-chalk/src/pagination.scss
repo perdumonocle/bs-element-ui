@@ -58,7 +58,7 @@
 
     &:disabled {
       color: $--pagination-button-disabled-color;
-      background-color: $--pagination-button-disabled-background-color;
+      background-color: var(--pagination-button-disabled-background-color);
       cursor: not-allowed;
     }
   }
@@ -67,10 +67,10 @@
   .btn-next {
     background: center center no-repeat;
     background-size: 16px;
-    background-color: $--pagination-background-color;
+    background-color: var(--pagination-background-color);
     cursor: pointer;
     margin: 0;
-    color: $--pagination-button-color;
+    color: var(--pagination-button-color);
 
     .el-icon {
       display: block;
@@ -218,8 +218,8 @@
       }
 
       &.active {
-        background-color: $--color-primary;
-        color: $--color-white;
+        background-color: var(--color-primary);
+        color: var(--color-white);
       }
     }
 
@@ -249,7 +249,7 @@
 
   li {
     padding: 0 4px;
-    background: $--pagination-background-color;
+    background: var(--pagination-background-color);
     vertical-align: top;
     display: inline-block;
     font-size: $--pagination-font-size;
@@ -264,7 +264,7 @@
     &.btn-quicknext,
     &.btn-quickprev {
       line-height: 28px;
-      color: $--pagination-button-color;
+      color: var(--pagination-button-color);
 
       &.disabled {
         color: $--color-text-placeholder;

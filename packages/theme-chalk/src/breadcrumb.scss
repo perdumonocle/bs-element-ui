@@ -27,11 +27,11 @@
       &.is-link, & a {
         font-weight: bold;
         text-decoration: none;
-        transition: $--color-transition-base;
-        color: $--color-text-primary;
+        transition: var(--color-transition-base);
+        color: var(--color-text-primary);
 
         &:hover {
-          color: $--color-primary;
+          color: var(--color-primary);
           cursor: pointer;
         }
       }

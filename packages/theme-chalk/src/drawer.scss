@@ -112,7 +112,7 @@ $directions: rtl, ltr, ttb, btt;
 @include b(drawer) {
   position: absolute;
   box-sizing: border-box;
-  background-color: $--dialog-background-color;
+  background-color: var(--dialog-background-color);
   display: flex;
   flex-direction: column;
   box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2),

@@ -7,7 +7,7 @@
   border-radius: $--border-radius-base;
   border-width: $--border-width-base;
   border-style: $--border-style-base;
-  border-color: $--border-color-lighter;
+  border-color: var(--border-color-lighter);
   position: fixed;
   left: 50%;
   top: 20px;
@@ -40,11 +40,11 @@
   }
 
   @include m(success) {
-    background-color: $--color-success-lighter;
-    border-color: $--color-success-light;
+    background-color: var(--color-success-lighter);
+    border-color: var(--color-success-light);
 
     .el-message__content {
-      color: $--message-success-font-color;
+      color: var(--message-success-font-color);
     }
   }
 
@@ -53,13 +53,13 @@
     border-color: $--color-warning-light;
 
     .el-message__content {
-      color: $--message-warning-font-color;
+      color: var(--message-warning-font-color);
     }
   }
 
   @include m(error) {
-    background-color: $--color-danger-lighter;
-    border-color: $--color-danger-light;
+    background-color: var(--color-danger-lighter);
+    border-color: var(--color-danger-light);
 
     .el-message__content {
       color: $--message-danger-font-color;
@@ -85,7 +85,7 @@
     right: 15px;
     transform: translateY(-50%);
     cursor: pointer;
-    color: $--message-close-icon-color;
+    color: var(--message-close-icon-color);
     font-size: $--message-close-size;
 
     &:focus {
@@ -97,7 +97,7 @@
   }
 
   & .el-icon-success {
-    color: $--message-success-font-color;
+    color: var(--message-success-font-color);
   }
 
   & .el-icon-error {
@@ -109,7 +109,7 @@
   }
 
   & .el-icon-warning {
-    color: $--message-warning-font-color;
+    color: var(--message-warning-font-color);
   }
 }
 

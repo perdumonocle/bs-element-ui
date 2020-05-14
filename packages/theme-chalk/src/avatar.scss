@@ -7,7 +7,7 @@
   text-align: center;
   overflow: hidden;
   color: $--avatar-font-color;
-  background: $--avatar-background-color;
+  background: var(--avatar-background-color);
   width: $--avatar-large-size;
   height: $--avatar-large-size;
   line-height: $--avatar-large-size;

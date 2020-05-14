@@ -16,7 +16,7 @@
   border-radius: $--border-radius-base;
   border: 1px solid $--border-color-light;
   box-sizing: border-box;
-  background-color: $--color-white;
+  background-color: var(--color-white);
 
   @include e(wrap) {
     max-height: 280px;
@@ -42,16 +42,16 @@
     text-overflow: ellipsis;
 
     &:hover {
-      background-color: $--select-option-hover-background;
+      background-color: var(--select-option-hover-background);
     }
 
     &.highlighted {
-      background-color: $--select-option-hover-background;
+      background-color: var(--select-option-hover-background);
     }
 
     &.divider {
       margin-top: 6px;
-      border-top: 1px solid $--color-black;
+      border-top: 1px solid var(--color-black);
     }
 
     &.divider:last-child {
@@ -69,7 +69,7 @@
       @include utils-vertical-center;
 
       &:hover {
-        background-color: $--color-white;
+        background-color: var(--color-white);
       }
     }
 

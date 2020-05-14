@@ -13,9 +13,9 @@
 }
 
 @include b(table-filter) {
-  border: solid 1px $--border-color-lighter;
+  border: solid 1px var(--border-color-lighter);
   border-radius: 2px;
-  background-color: $--color-white;
+  background-color: var(--color-white);
   box-shadow: $--dropdown-menu-box-shadow;
   box-sizing: border-box;
   margin: 2px 0;
@@ -36,12 +36,12 @@
 
     &:hover {
       background-color: $--dropdown-menuItem-hover-fill;
-      color: $--dropdown-menuItem-hover-color;
+      color: var(--dropdown-menuItem-hover-color);
     }
 
     @include when(active) {
-      background-color: $--color-primary;
-      color: $--color-white;
+      background-color: var(--color-primary);
+      color: var(--color-white);
     }
   }
 
@@ -50,7 +50,7 @@
   }
 
   @include e(bottom) {
-    border-top: 1px solid $--border-color-lighter;
+    border-top: 1px solid var(--border-color-lighter);
     padding: 8px;
 
     button {
@@ -62,7 +62,7 @@
       padding: 0 3px;
 
       &:hover {
-        color: $--color-primary;
+        color: var(--color-primary);
       }
 
       &:focus {
@@ -70,7 +70,7 @@
       }
 
       &.is-disabled {
-        color: $--disabled-color-base;
+        color: var(--disabled-color-base);
         cursor: not-allowed;
       }
     }

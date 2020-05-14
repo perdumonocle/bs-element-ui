@@ -12,8 +12,8 @@
     line-height: 1;
     white-space: nowrap;
     vertical-align: middle;
-    background: $--button-default-background-color;
-    border: $--border-base;
+    background: var(--button-default-background-color);
+    border: var(--border-base);
     font-weight: $--button-font-weight;
     border-left: 0;
     color: $--button-default-font-color;
@@ -29,7 +29,7 @@
     @include button-size($--button-padding-vertical, $--button-padding-horizontal, $--button-font-size, 0);
 
     &:hover {
-      color: $--color-primary;
+      color: var(--color-primary);
     }
 
     & [class*="el-icon-"] {
@@ -43,7 +43,7 @@
 
   &:first-child {
     .el-radio-button__inner {
-      border-left: $--border-base;
+      border-left: var(--border-base);
       border-radius: $--border-radius-base 0 0 $--border-radius-base;
       box-shadow: none !important;
     }
@@ -58,19 +58,19 @@
     &:checked {
       & + .el-radio-button__inner {
         color: $--radio-button-checked-font-color;
-        background-color: $--radio-button-checked-background-color;
-        border-color: $--radio-button-checked-border-color;
-        box-shadow: -1px 0 0 0 $--radio-button-checked-border-color;
+        background-color: var(--radio-button-checked-background-color);
+        border-color: var(--radio-button-checked-border-color);
+        box-shadow: -1px 0 0 0 var(--radio-button-checked-border-color);
       }
     }
 
     &:disabled {
       & + .el-radio-button__inner {
-        color: $--button-disabled-font-color;
+        color: var(--button-disabled-font-color);
         cursor: not-allowed;
         background-image: none;
         background-color: $--button-disabled-background-color;
-        border-color: $--button-disabled-border-color;
+        border-color: var(--button-disabled-border-color);
         box-shadow: none;
       }
       &:checked + .el-radio-button__inner {
@@ -108,6 +108,6 @@
   }
 
   &:focus:not(.is-focus):not(:active):not(.is-disabled){ /*获得焦点时 样式提醒*/
-    box-shadow: 0 0 2px 2px $--radio-button-checked-border-color;
+    box-shadow: 0 0 2px 2px var(--radio-button-checked-border-color);
   }
 }

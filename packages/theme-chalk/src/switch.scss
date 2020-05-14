@@ -24,10 +24,10 @@
     font-weight: 500;
     cursor: pointer;
     vertical-align: middle;
-    color: $--color-text-primary;
+    color: var(--color-text-primary);
 
     @include when(active) {
-      color: $--color-primary;
+      color: var(--color-primary);
     }
 
     @include m(left) {
@@ -75,14 +75,14 @@
       transition: all .3s;
       width: $--switch-button-size;
       height: $--switch-button-size;
-      background-color: $--color-white;
+      background-color: var(--color-white);
     }
   }
 
   @include when(checked) {
     .el-switch__core {
-      border-color: $--switch-on-color;
-      background-color: $--switch-on-color;
+      border-color: var(--switch-on-color);
+      background-color: var(--switch-on-color);
       &::after {
         left: 100%;
         margin-left: -$--switch-button-size - 1px;

@@ -8,7 +8,7 @@
   box-sizing: border-box;
   border-radius: $--alert-border-radius;
   position: relative;
-  background-color: $--color-white;
+  background-color: var(--color-white);
   overflow: hidden;
   opacity: 1;
   display: flex;
@@ -23,10 +23,10 @@
 
   @include when(dark) {
     .el-alert__closebtn {
-      color: $--color-white;
+      color: var(--color-white);
     }
     .el-alert__description {
-      color: $--color-white;
+      color: var(--color-white);
     }
   }
 
@@ -37,28 +37,28 @@
   @include m(success) {
     &.is-light {
       background-color: $--alert-success-color;
-      color: $--color-success;
+      color: var(--color-success);
 
       .el-alert__description {
-        color: $--color-success;
+        color: var(--color-success);
       }
     }
 
     &.is-dark {
-      background-color: $--color-success;
-      color: $--color-white;
+      background-color: var(--color-success);
+      color: var(--color-white);
     }
   }
 
   @include m(info) {
     &.is-light {
-      background-color: $--alert-info-color;
+      background-color: var(--alert-info-color);
       color: $--color-info;
     }
 
     &.is-dark {
       background-color: $--color-info;
-      color: $--color-white;
+      color: var(--color-white);
     }
 
     .el-alert__description {
@@ -78,23 +78,23 @@
 
     &.is-dark {
       background-color: $--color-warning;
-      color: $--color-white;
+      color: var(--color-white);
     }
   }
 
   @include m(error) {
     &.is-light {
-      background-color: $--alert-danger-color;
-      color: $--color-danger;
+      background-color: var(--alert-danger-color);
+      color: var(--color-danger);
 
       .el-alert__description {
-        color: $--color-danger;
+        color: var(--color-danger);
       }
     }
 
     &.is-dark {
-      background-color: $--color-danger;
-      color: $--color-white;
+      background-color: var(--color-danger);
+      color: var(--color-white);
     }
   }
 

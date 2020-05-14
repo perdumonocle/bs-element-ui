@@ -46,7 +46,7 @@ $typeMap: (
     
     
   &.el-link--default  {
-    color: $--link-default-font-color;
+    color: var(--link-default-font-color);
     &:hover {
       color: $--link-default-active-color
     }

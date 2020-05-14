@@ -9,8 +9,8 @@
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
-  background: $--button-default-background-color;
-  border: $--border-base;
+  background: var(--button-default-background-color);
+  border: var(--border-base);
   border-color: $--button-default-border-color;
   color: $--button-default-font-color;
   -webkit-appearance: none;
@@ -29,7 +29,7 @@
 
   &:hover,
   &:focus {
-    color: $--color-primary;
+    color: var(--color-primary);
     border-color: $--color-primary-light-7;
     background-color: $--color-primary-light-9;
   }
@@ -53,13 +53,13 @@
   @include when(plain) {
     &:hover,
     &:focus {
-      background: $--color-white;
-      border-color: $--color-primary;
-      color: $--color-primary;
+      background: var(--color-white);
+      border-color: var(--color-primary);
+      color: var(--color-primary);
     }
 
     &:active {
-      background: $--color-white;
+      background: var(--color-white);
       border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
       color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
       outline: none;
@@ -75,11 +75,11 @@
     &,
     &:hover,
     &:focus {
-      color: $--button-disabled-font-color;
+      color: var(--button-disabled-font-color);
       cursor: not-allowed;
       background-image: none;
       background-color: $--button-disabled-background-color;
-      border-color: $--button-disabled-border-color;
+      border-color: var(--button-disabled-border-color);
     }
 
     &.el-button--text {
@@ -90,9 +90,9 @@
       &,
       &:hover,
       &:focus {
-        background-color: $--color-white;
-        border-color: $--button-disabled-border-color;
-        color: $--button-disabled-font-color;
+        background-color: var(--color-white);
+        border-color: var(--button-disabled-border-color);
+        color: var(--button-disabled-font-color);
       }
     }
   }
@@ -156,7 +156,7 @@
   }
   @include m(text) {
     border-color: transparent;
-    color: $--color-primary;
+    color: var(--color-primary);
     background: transparent;
     padding-left: 0;
     padding-right: 0;

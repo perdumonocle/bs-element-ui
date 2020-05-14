@@ -29,7 +29,7 @@
       }
 
       .el-time-spinner__item:hover:not(.disabled):not(.active) {
-        background: $--color-white;
+        background: var(--color-white);
         cursor: default;
       }
     }
@@ -37,7 +37,7 @@
 
   @include e(arrow) {
     font-size: 12px;
-    color: $--color-text-secondary;
+    color: var(--color-text-secondary);
     position: absolute;
     left: 0;
     width: 100%;
@@ -48,7 +48,7 @@
     cursor: pointer;
 
     &:hover {
-      color: $--color-primary;
+      color: var(--color-primary);
     }
 
     &.el-icon-arrow-up {
@@ -93,12 +93,12 @@
     color: $--color-text-regular;
 
     &:hover:not(.disabled):not(.active) {
-      background: $--background-color-base;
+      background: var(--background-color-base);
       cursor: pointer;
     }
 
     &.active:not(.disabled) {
-      color: $--color-text-primary;
+      color: var(--color-text-primary);
       font-weight: bold;
     }
 

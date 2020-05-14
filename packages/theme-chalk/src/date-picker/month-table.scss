@@ -16,17 +16,17 @@
     }
     &.today {
       .cell {
-        color: $--color-primary;
+        color: var(--color-primary);
         font-weight: bold;
       }
       &.start-date .cell,
       &.end-date .cell {
-        color: $--color-white;
+        color: var(--color-white);
       }
     }
 
     &.disabled .cell {
-      background-color: $--background-color-base;
+      background-color: var(--background-color-base);
       cursor: not-allowed;
       color: $--color-text-placeholder;
 
@@ -44,24 +44,24 @@
       margin: 0 auto;
       border-radius: 18px;
       &:hover {
-        color: $--datepicker-hover-font-color;
+        color: var(--datepicker-hover-font-color);
       }
     }
 
     &.in-range div {
       background-color: $--datepicker-inrange-background-color;
       &:hover {
-        background-color: $--datepicker-inrange-hover-background-color;
+        background-color: var(--datepicker-inrange-hover-background-color);
       }
     }
     &.start-date div,
     &.end-date div {
-      color: $--color-white;
+      color: var(--color-white);
     }
 
     &.start-date .cell,
     &.end-date .cell {
-      color: $--color-white;
+      color: var(--color-white);
       background-color: $--datepicker-active-color;
     }
 

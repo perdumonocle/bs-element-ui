@@ -34,7 +34,7 @@
     height: 0;
     cursor: pointer;
     border-radius: inherit;
-    background-color: $--scrollbar-background-color;
+    background-color: var(--scrollbar-background-color);
     transition: .3s background-color;
 
     &:hover {

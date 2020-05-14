@@ -10,7 +10,7 @@
   font-size: $--cascader-menu-font-size;
 
   @include when(bordered) {
-    border: $--cascader-menu-border;
+    border: var(--cascader-menu-border);
     border-radius: $--cascader-menu-radius;
   }
 }
@@ -18,8 +18,8 @@
 @include b(cascader-menu) {
   min-width: 180px;
   box-sizing: border-box;
-  color: $--cascader-menu-font-color;
-  border-right: $--cascader-menu-border;
+  color: var(--cascader-menu-font-color);
+  border-right: var(--cascader-menu-border);
 
   &:last-child {
     border-right: none;
@@ -70,7 +70,7 @@
   outline: none;
 
   &.is-selectable.in-active-path {
-    color: $--cascader-menu-font-color;
+    color: var(--cascader-menu-font-color);
   }
 
   &.in-active-path,
@@ -88,7 +88,7 @@
   }
 
   @include when(disabled) {
-    color: $--cascader-node-color-disabled;
+    color: var(--cascader-node-color-disabled);
     cursor: not-allowed;
   }
 

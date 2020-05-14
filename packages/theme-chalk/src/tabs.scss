@@ -12,7 +12,7 @@
     bottom: 0;
     left: 0;
     height: 2px;
-    background-color: $--color-primary;
+    background-color: var(--color-primary);
     z-index: 1;
     transition: transform .3s cubic-bezier(.645,.045,.355,1);
     list-style: none;
@@ -36,7 +36,7 @@
     }
 
     &:hover {
-      color: $--color-primary;
+      color: var(--color-primary);
     }
   }
   @include e(nav-wrap) {
@@ -68,7 +68,7 @@
     cursor: pointer;
     line-height: 44px;
     font-size: 12px;
-    color: $--color-text-secondary;
+    color: var(--color-text-secondary);
   }
   @include e(nav-next) {
     right: 0;
@@ -101,7 +101,7 @@
     list-style: none;
     font-size: 14px;
     font-weight: 500;
-    color: $--color-text-primary;
+    color: var(--color-text-primary);
     position: relative;
 
     &:focus, &:focus:active {
@@ -125,21 +125,21 @@
 
       &:hover {
         background-color: $--color-text-placeholder;
-        color: $--color-white;
+        color: var(--color-white);
       }
     }
 
     @include when(active) {
-      color: $--color-primary;
+      color: var(--color-primary);
     }
 
     &:hover {
-      color: $--color-primary;
+      color: var(--color-primary);
       cursor: pointer;
     }
 
     @include when(disabled) {
-      color: $--disabled-color-base;
+      color: var(--disabled-color-base);
       cursor: default;
     }
   }
@@ -193,7 +193,7 @@
         }
       }
       &.is-active {
-        border-bottom-color: $--color-white;
+        border-bottom-color: var(--color-white);
 
         &.is-closable {
           padding-left: 20px;
@@ -207,15 +207,15 @@
     }
   }
   @include m(border-card) {
-    background: $--color-white;
-    border: 1px solid $--border-color-base;
+    background: var(--color-white);
+    border: 1px solid var(--border-color-base);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
 
     > .el-tabs__content {
       padding: 15px;
     }
     > .el-tabs__header {
-      background-color: $--background-color-base;
+      background-color: var(--background-color-base);
       border-bottom: 1px solid $--border-color-light;
       margin: 0;
     }
@@ -226,7 +226,7 @@
       transition: all .3s cubic-bezier(.645,.045,.355,1);
       border: 1px solid transparent;
       margin-top: -1px;
-      color: $--color-text-secondary;
+      color: var(--color-text-secondary);
 
       &:first-child {
         margin-left: -1px;
@@ -237,16 +237,16 @@
       }
 
       &.is-active {
-        color: $--color-primary;
-        background-color: $--color-white;
-        border-right-color: $--border-color-base;
-        border-left-color: $--border-color-base;
+        color: var(--color-primary);
+        background-color: var(--color-white);
+        border-right-color: var(--border-color-base);
+        border-left-color: var(--border-color-base);
       }
       &:not(.is-disabled):hover {
-        color: $--color-primary;
+        color: var(--color-primary);
       }
       &.is-disabled {
-        color: $--disabled-color-base;
+        color: var(--disabled-color-base);
       }
     }
 
@@ -284,7 +284,7 @@
     &.el-tabs--border-card {
       .el-tabs__header.is-bottom {
         border-bottom: 0;
-        border-top: 1px solid $--border-color-base;
+        border-top: 1px solid var(--border-color-base);
       }
       .el-tabs__nav-wrap.is-bottom {
         margin-top: -1px;

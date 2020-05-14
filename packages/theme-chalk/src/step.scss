@@ -27,8 +27,8 @@
     width: 100%;
 
     @include when(process) {
-      color: $--color-text-primary;
-      border-color: $--color-text-primary;
+      color: var(--color-text-primary);
+      border-color: var(--color-text-primary);
     }
 
     @include when(wait) {
@@ -37,18 +37,18 @@
     }
 
     @include when(success) {
-      color: $--color-success;
-      border-color: $--color-success;
+      color: var(--color-success);
+      border-color: var(--color-success);
     }
 
     @include when(error) {
-      color: $--color-danger;
-      border-color: $--color-danger;
+      color: var(--color-danger);
+      border-color: var(--color-danger);
     }
 
     @include when(finish) {
-      color: $--color-primary;
-      border-color: $--color-primary;
+      color: var(--color-primary);
+      border-color: var(--color-primary);
     }
   }
 
@@ -62,7 +62,7 @@
     height: 24px;
     font-size: 14px;
     box-sizing: border-box;
-    background: $--color-white;
+    background: var(--color-white);
     transition: .15s ease-out;
 
     @include when(text) {
@@ -123,7 +123,7 @@
 
     @include when(process) {
       font-weight: bold;
-      color: $--color-text-primary;
+      color: var(--color-text-primary);
     }
 
     @include when(wait) {
@@ -131,15 +131,15 @@
     }
 
     @include when(success) {
-      color: $--color-success;
+      color: var(--color-success);
     }
 
     @include when(error) {
-      color: $--color-danger;
+      color: var(--color-danger);
     }
 
     @include when(finish) {
-      color: $--color-primary;
+      color: var(--color-primary);
     }
   }
 
@@ -151,7 +151,7 @@
     font-weight: normal;
 
     @include when(process) {
-      color: $--color-text-primary;
+      color: var(--color-text-primary);
     }
 
     @include when(wait) {
@@ -159,15 +159,15 @@
     }
 
     @include when(success) {
-      color: $--color-success;
+      color: var(--color-success);
     }
 
     @include when(error) {
-      color: $--color-danger;
+      color: var(--color-danger);
     }
 
     @include when(finish) {
-      color: $--color-primary;
+      color: var(--color-primary);
     }
   }
 

@@ -19,7 +19,7 @@
 
   &:hover {
     .el-input__inner {
-      border-color: $--select-border-color-hover;
+      border-color: var(--select-border-color-hover);
     }
   }
 
@@ -28,13 +28,13 @@
     padding-right: 35px;
 
     &:focus {
-      border-color: $--select-input-focus-border-color;
+      border-color: var(--select-input-focus-border-color);
     }
   }
 
   .el-input {
     & .el-select__caret {
-      color: $--select-input-color;
+      color: var(--select-input-color);
       font-size: $--select-input-font-size;
       transition: transform .3s;
       transform: rotateZ(180deg);
@@ -49,8 +49,8 @@
         text-align: center;
         transform: rotateZ(180deg);
         border-radius: $--border-radius-circle;
-        color: $--select-input-color;
-        transition: $--color-transition-base;
+        color: var(--select-input-color);
+        transition: var(--color-transition-base);
 
         &:hover {
           color: $--select-close-hover-color;
@@ -69,7 +69,7 @@
     }
 
     &.is-focus .el-input__inner {
-      border-color: $--select-input-focus-border-color;
+      border-color: var(--select-input-focus-border-color);
     }
   }
 
@@ -98,7 +98,7 @@
     top: 8px;
     z-index: $--index-top;
     right: 25px;
-    color: $--select-input-color;
+    color: var(--select-input-color);
     line-height: 18px;
     font-size: $--select-input-font-size;
 
@@ -133,10 +133,10 @@
       background-color: $--color-text-placeholder;
       right: -7px;
       top: 0;
-      color: $--color-white;
+      color: var(--color-white);
 
       &:hover {
-        background-color: $--color-text-secondary;
+        background-color: var(--color-text-secondary);
       }
 
       &::before {
